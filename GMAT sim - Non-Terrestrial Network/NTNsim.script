@@ -92,6 +92,7 @@ GMAT Ground_Station.MinimumElevationAngle = 10;
 
 
 
+
 %----------------------------------------
 %---------- ForceModels
 %----------------------------------------
@@ -151,7 +152,7 @@ GMAT topo.Axes = Topocentric;
 
 Create ContactLocator ContactLocator1;
 GMAT ContactLocator1.Target = LEO_Sat;
-GMAT ContactLocator1.Filename = 'C:\Users\xxrac\Documents\GMAT\ContactLocatorGround_Station.txt';
+GMAT ContactLocator1.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\ContactLocatorGround_Station.txt';
 GMAT ContactLocator1.InputEpochFormat = 'TAIModJulian';
 GMAT ContactLocator1.InitialEpoch = '21545';
 GMAT ContactLocator1.StepSize = 600;
@@ -171,7 +172,7 @@ GMAT ContactLocator1.ReportTimeFormat = 'UTCGregorian';
 
 Create EclipseLocator EclipseLocator1;
 GMAT EclipseLocator1.Spacecraft = LEO_Sat;
-GMAT EclipseLocator1.Filename = 'C:\Users\xxrac\Documents\GMAT\EclipseLocatorGround_Station.txt';
+GMAT EclipseLocator1.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\EclipseLocatorGround_Station.txt';
 GMAT EclipseLocator1.OccultingBodies = {Earth, Luna};
 GMAT EclipseLocator1.InputEpochFormat = 'TAIModJulian';
 GMAT EclipseLocator1.InitialEpoch = '21545';
@@ -241,7 +242,7 @@ GMAT ReportFile_XY.UpperLeft = [ 0.04117647058823529 0.07120743034055728 ];
 GMAT ReportFile_XY.Size = [ 0.8829411764705882 0.8782249742002064 ];
 GMAT ReportFile_XY.RelativeZOrder = 40;
 GMAT ReportFile_XY.Maximized = false;
-GMAT ReportFile_XY.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFileXY.txt';
+GMAT ReportFile_XY.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\ReportFileXY.txt';
 GMAT ReportFile_XY.Precision = 16;
 GMAT ReportFile_XY.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.EarthMJ2000Eq.X, LEO_Sat.EarthMJ2000Eq.Y, LEO_Sat.EarthMJ2000Eq.Z, LEO_Sat.EarthMJ2000Eq.VX, LEO_Sat.EarthMJ2000Eq.VY, LEO_Sat.EarthMJ2000Eq.VZ};
 GMAT ReportFile_XY.WriteHeaders = true;
@@ -258,7 +259,7 @@ GMAT ReportFile_topo.UpperLeft = [ 0.06470588235294118 0.1124871001031992 ];
 GMAT ReportFile_topo.Size = [ 0.8652941176470588 0.7936016511867905 ];
 GMAT ReportFile_topo.RelativeZOrder = 60;
 GMAT ReportFile_topo.Maximized = false;
-GMAT ReportFile_topo.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFiletopo.txt';
+GMAT ReportFile_topo.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\ReportFiletopo.txt';
 GMAT ReportFile_topo.Precision = 16;
 GMAT ReportFile_topo.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.topo.X, LEO_Sat.topo.Y, LEO_Sat.topo.Z, LEO_Sat.topo.VX, LEO_Sat.topo.VY, LEO_Sat.topo.VZ};
 GMAT ReportFile_topo.WriteHeaders = true;
@@ -275,7 +276,7 @@ GMAT ReportFile_latlong.UpperLeft = [ 0.07000000000000001 0.1155830753353973 ];
 GMAT ReportFile_latlong.Size = [ 0.7776470588235294 0.7966976264189887 ];
 GMAT ReportFile_latlong.RelativeZOrder = 50;
 GMAT ReportFile_latlong.Maximized = false;
-GMAT ReportFile_latlong.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFilelatlong.txt';
+GMAT ReportFile_latlong.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\ReportFilelatlong.txt';
 GMAT ReportFile_latlong.Precision = 16;
 GMAT ReportFile_latlong.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.Earth.Latitude, LEO_Sat.Earth.Longitude};
 GMAT ReportFile_latlong.WriteHeaders = true;
@@ -357,7 +358,7 @@ GMAT ReportFile_Ground_Station.UpperLeft = [ 0 0 ];
 GMAT ReportFile_Ground_Station.Size = [ 0.898235294117647 0.7987616099071208 ];
 GMAT ReportFile_Ground_Station.RelativeZOrder = 44;
 GMAT ReportFile_Ground_Station.Maximized = false;
-GMAT ReportFile_Ground_Station.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFileGround_Station.txt';
+GMAT ReportFile_Ground_Station.Filename = 'C:\Users\xxrac\Documents\GitHub\Work_examples\GMAT sim - Non-Terrestrial Network\ReportFileGround_Station.txt';
 GMAT ReportFile_Ground_Station.Precision = 16;
 GMAT ReportFile_Ground_Station.Add = {Ground_Station.UTCGregorian, Ground_Station.EarthMJ2000Eq.VX, Ground_Station.EarthMJ2000Eq.VY, Ground_Station.EarthMJ2000Eq.VZ};
 GMAT ReportFile_Ground_Station.WriteHeaders = true;

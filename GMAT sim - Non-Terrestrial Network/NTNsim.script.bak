@@ -6,74 +6,76 @@
 %---------- Spacecraft
 %----------------------------------------
 
-Create Spacecraft SatSS;
-GMAT SatSS.DateFormat = UTCGregorian;
-GMAT SatSS.Epoch = '19 Mar 2024 00:00:00.000';
-GMAT SatSS.CoordinateSystem = EarthMJ2000Eq;
-GMAT SatSS.DisplayStateType = Keplerian;
-GMAT SatSS.SMA = 6878;
-GMAT SatSS.ECC = 3.85691817605116e-33;
-GMAT SatSS.INC = 98;
-GMAT SatSS.RAAN = 270;
-GMAT SatSS.AOP = 0;
-GMAT SatSS.TA = 0;
-GMAT SatSS.DryMass = 850;
-GMAT SatSS.Cd = 2.2;
-GMAT SatSS.Cr = 1.8;
-GMAT SatSS.DragArea = 15;
-GMAT SatSS.SRPArea = 1;
-GMAT SatSS.SPADDragScaleFactor = 1;
-GMAT SatSS.SPADSRPScaleFactor = 1;
-GMAT SatSS.AtmosDensityScaleFactor = 1;
-GMAT SatSS.ExtendedMassPropertiesModel = 'None';
-GMAT SatSS.NAIFId = -10000001;
-GMAT SatSS.NAIFIdReferenceFrame = -9000001;
-GMAT SatSS.OrbitColor = Red;
-GMAT SatSS.TargetColor = Teal;
-GMAT SatSS.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
-GMAT SatSS.CdSigma = 1e+70;
-GMAT SatSS.CrSigma = 1e+70;
-GMAT SatSS.Id = 'SatId';
-GMAT SatSS.Attitude = CoordinateSystemFixed;
-GMAT SatSS.SPADSRPInterpolationMethod = Bilinear;
-GMAT SatSS.SPADSRPScaleFactorSigma = 1e+70;
-GMAT SatSS.SPADDragInterpolationMethod = Bilinear;
-GMAT SatSS.SPADDragScaleFactorSigma = 1e+70;
-GMAT SatSS.AtmosDensityScaleFactorSigma = 1e+70;
-GMAT SatSS.ModelFile = 'aura.3ds';
-GMAT SatSS.ModelOffsetX = 0;
-GMAT SatSS.ModelOffsetY = 0;
-GMAT SatSS.ModelOffsetZ = 0;
-GMAT SatSS.ModelRotationX = 0;
-GMAT SatSS.ModelRotationY = 0;
-GMAT SatSS.ModelRotationZ = 0;
-GMAT SatSS.ModelScale = 1;
-GMAT SatSS.AttitudeDisplayStateType = 'Quaternion';
-GMAT SatSS.AttitudeRateDisplayStateType = 'AngularVelocity';
-GMAT SatSS.AttitudeCoordinateSystem = EarthMJ2000Eq;
-GMAT SatSS.EulerAngleSequence = '321';
+Create Spacecraft LEO_Sat;
+GMAT LEO_Sat.DateFormat = UTCGregorian;
+GMAT LEO_Sat.Epoch = '19 Mar 2024 00:00:00.000';
+GMAT LEO_Sat.CoordinateSystem = EarthMJ2000Eq;
+GMAT LEO_Sat.DisplayStateType = Keplerian;
+GMAT LEO_Sat.SMA = 6878;
+GMAT LEO_Sat.ECC = 3.85691817605116e-33;
+GMAT LEO_Sat.INC = 98;
+GMAT LEO_Sat.RAAN = 270;
+GMAT LEO_Sat.AOP = 0;
+GMAT LEO_Sat.TA = 0;
+GMAT LEO_Sat.DryMass = 850;
+GMAT LEO_Sat.Cd = 2.2;
+GMAT LEO_Sat.Cr = 1.8;
+GMAT LEO_Sat.DragArea = 15;
+GMAT LEO_Sat.SRPArea = 1;
+GMAT LEO_Sat.SPADDragScaleFactor = 1;
+GMAT LEO_Sat.SPADSRPScaleFactor = 1;
+GMAT LEO_Sat.AtmosDensityScaleFactor = 1;
+GMAT LEO_Sat.ExtendedMassPropertiesModel = 'None';
+GMAT LEO_Sat.NAIFId = -10000001;
+GMAT LEO_Sat.NAIFIdReferenceFrame = -9000001;
+GMAT LEO_Sat.OrbitColor = Red;
+GMAT LEO_Sat.TargetColor = Teal;
+GMAT LEO_Sat.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT LEO_Sat.CdSigma = 1e+70;
+GMAT LEO_Sat.CrSigma = 1e+70;
+GMAT LEO_Sat.Id = 'SatId';
+GMAT LEO_Sat.Attitude = CoordinateSystemFixed;
+GMAT LEO_Sat.SPADSRPInterpolationMethod = Bilinear;
+GMAT LEO_Sat.SPADSRPScaleFactorSigma = 1e+70;
+GMAT LEO_Sat.SPADDragInterpolationMethod = Bilinear;
+GMAT LEO_Sat.SPADDragScaleFactorSigma = 1e+70;
+GMAT LEO_Sat.AtmosDensityScaleFactorSigma = 1e+70;
+GMAT LEO_Sat.ModelFile = 'aura.3ds';
+GMAT LEO_Sat.ModelOffsetX = 0;
+GMAT LEO_Sat.ModelOffsetY = 0;
+GMAT LEO_Sat.ModelOffsetZ = 0;
+GMAT LEO_Sat.ModelRotationX = 0;
+GMAT LEO_Sat.ModelRotationY = 0;
+GMAT LEO_Sat.ModelRotationZ = 0;
+GMAT LEO_Sat.ModelScale = 1;
+GMAT LEO_Sat.AttitudeDisplayStateType = 'Quaternion';
+GMAT LEO_Sat.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT LEO_Sat.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT LEO_Sat.EulerAngleSequence = '321';
 
 %----------------------------------------
 %---------- GroundStations
 %----------------------------------------
 
-Create GroundStation Svalbard;
-GMAT Svalbard.OrbitColor = Thistle;
-GMAT Svalbard.TargetColor = DarkGray;
-GMAT Svalbard.CentralBody = Earth;
-GMAT Svalbard.StateType = Spherical;
-GMAT Svalbard.HorizonReference = Sphere;
-GMAT Svalbard.Location1 = 78.229772;
-GMAT Svalbard.Location2 = 15.407786;
-GMAT Svalbard.Location3 = 0.5;
-GMAT Svalbard.Id = 'StationId';
-GMAT Svalbard.IonosphereModel = 'None';
-GMAT Svalbard.TroposphereModel = 'None';
-GMAT Svalbard.DataSource = 'Constant';
-GMAT Svalbard.Temperature = 295.1;
-GMAT Svalbard.Pressure = 1013.5;
-GMAT Svalbard.Humidity = 55;
-GMAT Svalbard.MinimumElevationAngle = 10;
+Create GroundStation Ground_Station;
+GMAT Ground_Station.OrbitColor = Thistle;
+GMAT Ground_Station.TargetColor = DarkGray;
+GMAT Ground_Station.CentralBody = Earth;
+GMAT Ground_Station.StateType = Spherical;
+GMAT Ground_Station.HorizonReference = Sphere;
+GMAT Ground_Station.Location1 = 77;
+GMAT Ground_Station.Location2 = 319;
+GMAT Ground_Station.Location3 = 0.7;
+GMAT Ground_Station.Id = 'StationId';
+GMAT Ground_Station.IonosphereModel = 'None';
+GMAT Ground_Station.TroposphereModel = 'None';
+GMAT Ground_Station.DataSource = 'Constant';
+GMAT Ground_Station.Temperature = 295.1;
+GMAT Ground_Station.Pressure = 1013.5;
+GMAT Ground_Station.Humidity = 55;
+GMAT Ground_Station.MinimumElevationAngle = 10;
+
+
 
 
 
@@ -94,53 +96,53 @@ GMAT Svalbard.MinimumElevationAngle = 10;
 %---------- ForceModels
 %----------------------------------------
 
-Create ForceModel LEOProp_ForceModel;
-GMAT LEOProp_ForceModel.CentralBody = Earth;
-GMAT LEOProp_ForceModel.PrimaryBodies = {Earth};
-GMAT LEOProp_ForceModel.PointMasses = {Luna, Sun};
-GMAT LEOProp_ForceModel.SRP = On;
-GMAT LEOProp_ForceModel.RelativisticCorrection = Off;
-GMAT LEOProp_ForceModel.ErrorControl = RSSStep;
-GMAT LEOProp_ForceModel.GravityField.Earth.Degree = 10;
-GMAT LEOProp_ForceModel.GravityField.Earth.Order = 10;
-GMAT LEOProp_ForceModel.GravityField.Earth.StmLimit = 100;
-GMAT LEOProp_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
-GMAT LEOProp_ForceModel.GravityField.Earth.TideModel = 'None';
-GMAT LEOProp_ForceModel.SRP.Flux = 1367;
-GMAT LEOProp_ForceModel.SRP.SRPModel = Spherical;
-GMAT LEOProp_ForceModel.SRP.Nominal_Sun = 149597870.691;
-GMAT LEOProp_ForceModel.Drag.AtmosphereModel = JacchiaRoberts;
-GMAT LEOProp_ForceModel.Drag.HistoricWeatherSource = 'ConstantFluxAndGeoMag';
-GMAT LEOProp_ForceModel.Drag.PredictedWeatherSource = 'ConstantFluxAndGeoMag';
-GMAT LEOProp_ForceModel.Drag.CSSISpaceWeatherFile = 'SpaceWeather-All-v1.2.txt';
-GMAT LEOProp_ForceModel.Drag.SchattenFile = 'SchattenPredict.txt';
-GMAT LEOProp_ForceModel.Drag.F107 = 150;
-GMAT LEOProp_ForceModel.Drag.F107A = 150;
-GMAT LEOProp_ForceModel.Drag.MagneticIndex = 3;
-GMAT LEOProp_ForceModel.Drag.SchattenErrorModel = 'Nominal';
-GMAT LEOProp_ForceModel.Drag.SchattenTimingModel = 'NominalCycle';
-GMAT LEOProp_ForceModel.Drag.DragModel = 'Spherical';
+Create ForceModel LEO_Prop_ForceModel;
+GMAT LEO_Prop_ForceModel.CentralBody = Earth;
+GMAT LEO_Prop_ForceModel.PrimaryBodies = {Earth};
+GMAT LEO_Prop_ForceModel.PointMasses = {Luna, Sun};
+GMAT LEO_Prop_ForceModel.SRP = On;
+GMAT LEO_Prop_ForceModel.RelativisticCorrection = Off;
+GMAT LEO_Prop_ForceModel.ErrorControl = RSSStep;
+GMAT LEO_Prop_ForceModel.GravityField.Earth.Degree = 10;
+GMAT LEO_Prop_ForceModel.GravityField.Earth.Order = 10;
+GMAT LEO_Prop_ForceModel.GravityField.Earth.StmLimit = 100;
+GMAT LEO_Prop_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+GMAT LEO_Prop_ForceModel.GravityField.Earth.TideModel = 'None';
+GMAT LEO_Prop_ForceModel.SRP.Flux = 1367;
+GMAT LEO_Prop_ForceModel.SRP.SRPModel = Spherical;
+GMAT LEO_Prop_ForceModel.SRP.Nominal_Sun = 149597870.691;
+GMAT LEO_Prop_ForceModel.Drag.AtmosphereModel = JacchiaRoberts;
+GMAT LEO_Prop_ForceModel.Drag.HistoricWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT LEO_Prop_ForceModel.Drag.PredictedWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT LEO_Prop_ForceModel.Drag.CSSISpaceWeatherFile = 'SpaceWeather-All-v1.2.txt';
+GMAT LEO_Prop_ForceModel.Drag.SchattenFile = 'SchattenPredict.txt';
+GMAT LEO_Prop_ForceModel.Drag.F107 = 150;
+GMAT LEO_Prop_ForceModel.Drag.F107A = 150;
+GMAT LEO_Prop_ForceModel.Drag.MagneticIndex = 3;
+GMAT LEO_Prop_ForceModel.Drag.SchattenErrorModel = 'Nominal';
+GMAT LEO_Prop_ForceModel.Drag.SchattenTimingModel = 'NominalCycle';
+GMAT LEO_Prop_ForceModel.Drag.DragModel = 'Spherical';
 
 %----------------------------------------
 %---------- Propagators
 %----------------------------------------
 
-Create Propagator LEOProp;
-GMAT LEOProp.FM = LEOProp_ForceModel;
-GMAT LEOProp.Type = PrinceDormand78;
-GMAT LEOProp.InitialStepSize = 60;
-GMAT LEOProp.Accuracy = 9.999999999999999e-12;
-GMAT LEOProp.MinStep = 0;
-GMAT LEOProp.MaxStep = 2700;
-GMAT LEOProp.MaxStepAttempts = 50;
-GMAT LEOProp.StopIfAccuracyIsViolated = true;
+Create Propagator LEO_Prop;
+GMAT LEO_Prop.FM = LEO_Prop_ForceModel;
+GMAT LEO_Prop.Type = PrinceDormand78;
+GMAT LEO_Prop.InitialStepSize = 60;
+GMAT LEO_Prop.Accuracy = 9.999999999999999e-12;
+GMAT LEO_Prop.MinStep = 0;
+GMAT LEO_Prop.MaxStep = 2700;
+GMAT LEO_Prop.MaxStepAttempts = 50;
+GMAT LEO_Prop.StopIfAccuracyIsViolated = true;
 
 %----------------------------------------
 %---------- Coordinate Systems
 %----------------------------------------
 
 Create CoordinateSystem topo;
-GMAT topo.Origin = Svalbard;
+GMAT topo.Origin = Ground_Station;
 GMAT topo.Axes = Topocentric;
 
 %----------------------------------------
@@ -148,8 +150,8 @@ GMAT topo.Axes = Topocentric;
 %----------------------------------------
 
 Create ContactLocator ContactLocator1;
-GMAT ContactLocator1.Target = SatSS;
-GMAT ContactLocator1.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\ContactLocatorSvalbard.txt';
+GMAT ContactLocator1.Target = LEO_Sat;
+GMAT ContactLocator1.Filename = 'C:\Users\xxrac\Documents\GMAT\ContactLocatorGround_Station.txt';
 GMAT ContactLocator1.InputEpochFormat = 'TAIModJulian';
 GMAT ContactLocator1.InitialEpoch = '21545';
 GMAT ContactLocator1.StepSize = 600;
@@ -159,7 +161,7 @@ GMAT ContactLocator1.UseStellarAberration = true;
 GMAT ContactLocator1.WriteReport = true;
 GMAT ContactLocator1.RunMode = Automatic;
 GMAT ContactLocator1.UseEntireInterval = true;
-GMAT ContactLocator1.Observers = {Svalbard};
+GMAT ContactLocator1.Observers = {Ground_Station};
 GMAT ContactLocator1.LightTimeDirection = Transmit;
 GMAT ContactLocator1.LeftJustified = false;
 GMAT ContactLocator1.ReportPrecision = 6;
@@ -168,8 +170,8 @@ GMAT ContactLocator1.IntervalStepSize = 0;
 GMAT ContactLocator1.ReportTimeFormat = 'UTCGregorian';
 
 Create EclipseLocator EclipseLocator1;
-GMAT EclipseLocator1.Spacecraft = SatSS;
-GMAT EclipseLocator1.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\EclipseLocatorSvalbard.txt';
+GMAT EclipseLocator1.Spacecraft = LEO_Sat;
+GMAT EclipseLocator1.Filename = 'C:\Users\xxrac\Documents\GMAT\EclipseLocatorGround_Station.txt';
 GMAT EclipseLocator1.OccultingBodies = {Earth, Luna};
 GMAT EclipseLocator1.InputEpochFormat = 'TAIModJulian';
 GMAT EclipseLocator1.InitialEpoch = '21545';
@@ -188,11 +190,11 @@ GMAT EclipseLocator1.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
 
 Create OrbitView OrbitViewXY;
 GMAT OrbitViewXY.SolverIterations = Current;
-GMAT OrbitViewXY.UpperLeft = [ 0.06647058823529411 0.05572755417956656 ];
-GMAT OrbitViewXY.Size = [ 0.9058823529411765 0.9814241486068112 ];
-GMAT OrbitViewXY.RelativeZOrder = 173;
+GMAT OrbitViewXY.UpperLeft = [ 0.0006024096385542169 0 ];
+GMAT OrbitViewXY.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT OrbitViewXY.RelativeZOrder = 336;
 GMAT OrbitViewXY.Maximized = false;
-GMAT OrbitViewXY.Add = {SatSS, Earth, Sun};
+GMAT OrbitViewXY.Add = {LEO_Sat, Earth, Sun};
 GMAT OrbitViewXY.CoordinateSystem = EarthMJ2000Eq;
 GMAT OrbitViewXY.DrawObject = [ true true true ];
 GMAT OrbitViewXY.DataCollectFrequency = 1;
@@ -220,11 +222,11 @@ GMAT OrbitViewXY.EnableConstellations = On;
 
 Create GroundTrackPlot GroundTrackPlot;
 GMAT GroundTrackPlot.SolverIterations = Current;
-GMAT GroundTrackPlot.UpperLeft = [ -0.2217647058823529 0.2755417956656347 ];
-GMAT GroundTrackPlot.Size = [ 1.138235294117647 0.587203302373581 ];
-GMAT GroundTrackPlot.RelativeZOrder = 136;
+GMAT GroundTrackPlot.UpperLeft = [ 0.6650602409638554 0.002143622722400857 ];
+GMAT GroundTrackPlot.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT GroundTrackPlot.RelativeZOrder = 350;
 GMAT GroundTrackPlot.Maximized = false;
-GMAT GroundTrackPlot.Add = {SatSS, Svalbard};
+GMAT GroundTrackPlot.Add = {LEO_Sat, Ground_Station};
 GMAT GroundTrackPlot.DataCollectFrequency = 1;
 GMAT GroundTrackPlot.UpdatePlotFrequency = 50;
 GMAT GroundTrackPlot.NumPointsToRedraw = 0;
@@ -239,9 +241,9 @@ GMAT ReportFile_XY.UpperLeft = [ 0.04117647058823529 0.07120743034055728 ];
 GMAT ReportFile_XY.Size = [ 0.8829411764705882 0.8782249742002064 ];
 GMAT ReportFile_XY.RelativeZOrder = 40;
 GMAT ReportFile_XY.Maximized = false;
-GMAT ReportFile_XY.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\ReportFileXY.txt';
+GMAT ReportFile_XY.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFileXY.txt';
 GMAT ReportFile_XY.Precision = 16;
-GMAT ReportFile_XY.Add = {SatSS.UTCGregorian, SatSS.Earth.Altitude, SatSS.EarthMJ2000Eq.X, SatSS.EarthMJ2000Eq.Y, SatSS.EarthMJ2000Eq.Z, SatSS.EarthMJ2000Eq.VX, SatSS.EarthMJ2000Eq.VY, SatSS.EarthMJ2000Eq.VZ};
+GMAT ReportFile_XY.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.EarthMJ2000Eq.X, LEO_Sat.EarthMJ2000Eq.Y, LEO_Sat.EarthMJ2000Eq.Z, LEO_Sat.EarthMJ2000Eq.VX, LEO_Sat.EarthMJ2000Eq.VY, LEO_Sat.EarthMJ2000Eq.VZ};
 GMAT ReportFile_XY.WriteHeaders = true;
 GMAT ReportFile_XY.LeftJustify = On;
 GMAT ReportFile_XY.ZeroFill = Off;
@@ -256,9 +258,9 @@ GMAT ReportFile_topo.UpperLeft = [ 0.06470588235294118 0.1124871001031992 ];
 GMAT ReportFile_topo.Size = [ 0.8652941176470588 0.7936016511867905 ];
 GMAT ReportFile_topo.RelativeZOrder = 60;
 GMAT ReportFile_topo.Maximized = false;
-GMAT ReportFile_topo.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\ReportFiletopo.txt';
+GMAT ReportFile_topo.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFiletopo.txt';
 GMAT ReportFile_topo.Precision = 16;
-GMAT ReportFile_topo.Add = {SatSS.UTCGregorian, SatSS.Earth.Altitude, SatSS.topo.X, SatSS.topo.Y, SatSS.topo.Z, SatSS.topo.VX, SatSS.topo.VY, SatSS.topo.VZ};
+GMAT ReportFile_topo.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.topo.X, LEO_Sat.topo.Y, LEO_Sat.topo.Z, LEO_Sat.topo.VX, LEO_Sat.topo.VY, LEO_Sat.topo.VZ};
 GMAT ReportFile_topo.WriteHeaders = true;
 GMAT ReportFile_topo.LeftJustify = On;
 GMAT ReportFile_topo.ZeroFill = Off;
@@ -273,9 +275,9 @@ GMAT ReportFile_latlong.UpperLeft = [ 0.07000000000000001 0.1155830753353973 ];
 GMAT ReportFile_latlong.Size = [ 0.7776470588235294 0.7966976264189887 ];
 GMAT ReportFile_latlong.RelativeZOrder = 50;
 GMAT ReportFile_latlong.Maximized = false;
-GMAT ReportFile_latlong.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\ReportFilelatlong.txt';
+GMAT ReportFile_latlong.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFilelatlong.txt';
 GMAT ReportFile_latlong.Precision = 16;
-GMAT ReportFile_latlong.Add = {SatSS.UTCGregorian, SatSS.Earth.Altitude, SatSS.Earth.Latitude, SatSS.Earth.Longitude};
+GMAT ReportFile_latlong.Add = {LEO_Sat.UTCGregorian, LEO_Sat.Earth.Altitude, LEO_Sat.Earth.Latitude, LEO_Sat.Earth.Longitude};
 GMAT ReportFile_latlong.WriteHeaders = true;
 GMAT ReportFile_latlong.LeftJustify = On;
 GMAT ReportFile_latlong.ZeroFill = Off;
@@ -286,44 +288,44 @@ GMAT ReportFile_latlong.WriteReport = true;
 
 Create XYPlot Topoplot;
 GMAT Topoplot.SolverIterations = Current;
-GMAT Topoplot.UpperLeft = [ 0.05764705882352941 0.1021671826625387 ];
-GMAT Topoplot.Size = [ 0.7829411764705883 0.7203302373581011 ];
-GMAT Topoplot.RelativeZOrder = 131;
+GMAT Topoplot.UpperLeft = [ 0.3319277108433735 0.4973204715969989 ];
+GMAT Topoplot.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT Topoplot.RelativeZOrder = 328;
 GMAT Topoplot.Maximized = false;
-GMAT Topoplot.XVariable = SatSS.topo.X;
-GMAT Topoplot.YVariables = {SatSS.topo.Y};
+GMAT Topoplot.XVariable = LEO_Sat.topo.X;
+GMAT Topoplot.YVariables = {LEO_Sat.topo.Y};
 GMAT Topoplot.ShowGrid = true;
 GMAT Topoplot.ShowPlot = true;
 
 Create XYPlot Latlongplot;
 GMAT Latlongplot.SolverIterations = Current;
-GMAT Latlongplot.UpperLeft = [ -0.1005882352941176 0.4747162022703819 ];
-GMAT Latlongplot.Size = [ 1.088235294117647 0.4932920536635707 ];
-GMAT Latlongplot.RelativeZOrder = 163;
+GMAT Latlongplot.UpperLeft = [ 0.6638554216867469 0.4973204715969989 ];
+GMAT Latlongplot.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT Latlongplot.RelativeZOrder = 332;
 GMAT Latlongplot.Maximized = false;
-GMAT Latlongplot.XVariable = SatSS.Earth.Latitude;
-GMAT Latlongplot.YVariables = {SatSS.Earth.Longitude};
+GMAT Latlongplot.XVariable = LEO_Sat.Earth.Latitude;
+GMAT Latlongplot.YVariables = {LEO_Sat.Earth.Longitude};
 GMAT Latlongplot.ShowGrid = true;
 GMAT Latlongplot.ShowPlot = true;
 
 Create XYPlot XYplot;
 GMAT XYplot.SolverIterations = Current;
-GMAT XYplot.UpperLeft = [ -0.03941176470588235 0.1486068111455108 ];
-GMAT XYplot.Size = [ 0.6494117647058824 0.6790505675954592 ];
-GMAT XYplot.RelativeZOrder = 145;
+GMAT XYplot.UpperLeft = [ 0.0006024096385542169 0.4983922829581994 ];
+GMAT XYplot.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT XYplot.RelativeZOrder = 316;
 GMAT XYplot.Maximized = false;
-GMAT XYplot.XVariable = SatSS.EarthMJ2000Eq.X;
-GMAT XYplot.YVariables = {SatSS.EarthMJ2000Eq.Y};
+GMAT XYplot.XVariable = LEO_Sat.EarthMJ2000Eq.X;
+GMAT XYplot.YVariables = {LEO_Sat.EarthMJ2000Eq.Y};
 GMAT XYplot.ShowGrid = true;
 GMAT XYplot.ShowPlot = true;
 
 Create OrbitView OrbitViewTopo;
 GMAT OrbitViewTopo.SolverIterations = Current;
-GMAT OrbitViewTopo.UpperLeft = [ 0.07823529411764706 0.04437564499484004 ];
-GMAT OrbitViewTopo.Size = [ 0.7905882352941176 0.8555211558307534 ];
-GMAT OrbitViewTopo.RelativeZOrder = 171;
+GMAT OrbitViewTopo.UpperLeft = [ 0.3331325301204819 0.001071811361200429 ];
+GMAT OrbitViewTopo.Size = [ 0.3325301204819277 0.4973204715969989 ];
+GMAT OrbitViewTopo.RelativeZOrder = 348;
 GMAT OrbitViewTopo.Maximized = false;
-GMAT OrbitViewTopo.Add = {SatSS, Earth, Sun};
+GMAT OrbitViewTopo.Add = {LEO_Sat, Earth, Sun};
 GMAT OrbitViewTopo.CoordinateSystem = topo;
 GMAT OrbitViewTopo.DrawObject = [ true true true ];
 GMAT OrbitViewTopo.DataCollectFrequency = 1;
@@ -349,22 +351,22 @@ GMAT OrbitViewTopo.StarCount = 7000;
 GMAT OrbitViewTopo.EnableStars = On;
 GMAT OrbitViewTopo.EnableConstellations = On;
 
-Create ReportFile ReportFile_Svalbard;
-GMAT ReportFile_Svalbard.SolverIterations = Current;
-GMAT ReportFile_Svalbard.UpperLeft = [ 0 0 ];
-GMAT ReportFile_Svalbard.Size = [ 0.898235294117647 0.7987616099071208 ];
-GMAT ReportFile_Svalbard.RelativeZOrder = 44;
-GMAT ReportFile_Svalbard.Maximized = false;
-GMAT ReportFile_Svalbard.Filename = 'C:\Users\xxrac\Documents\GitHub\SPINtern2024_NTN_Simulation\ReportFileSvalbard.txt';
-GMAT ReportFile_Svalbard.Precision = 16;
-GMAT ReportFile_Svalbard.Add = {Svalbard.UTCGregorian, Svalbard.EarthMJ2000Eq.VX, Svalbard.EarthMJ2000Eq.VY, Svalbard.EarthMJ2000Eq.VZ};
-GMAT ReportFile_Svalbard.WriteHeaders = true;
-GMAT ReportFile_Svalbard.LeftJustify = On;
-GMAT ReportFile_Svalbard.ZeroFill = Off;
-GMAT ReportFile_Svalbard.FixedWidth = false;
-GMAT ReportFile_Svalbard.Delimiter = ',';
-GMAT ReportFile_Svalbard.ColumnWidth = 23;
-GMAT ReportFile_Svalbard.WriteReport = true;
+Create ReportFile ReportFile_Ground_Station;
+GMAT ReportFile_Ground_Station.SolverIterations = Current;
+GMAT ReportFile_Ground_Station.UpperLeft = [ 0 0 ];
+GMAT ReportFile_Ground_Station.Size = [ 0.898235294117647 0.7987616099071208 ];
+GMAT ReportFile_Ground_Station.RelativeZOrder = 44;
+GMAT ReportFile_Ground_Station.Maximized = false;
+GMAT ReportFile_Ground_Station.Filename = 'C:\Users\xxrac\Documents\GMAT\ReportFileGround_Station.txt';
+GMAT ReportFile_Ground_Station.Precision = 16;
+GMAT ReportFile_Ground_Station.Add = {Ground_Station.UTCGregorian, Ground_Station.EarthMJ2000Eq.VX, Ground_Station.EarthMJ2000Eq.VY, Ground_Station.EarthMJ2000Eq.VZ};
+GMAT ReportFile_Ground_Station.WriteHeaders = true;
+GMAT ReportFile_Ground_Station.LeftJustify = On;
+GMAT ReportFile_Ground_Station.ZeroFill = Off;
+GMAT ReportFile_Ground_Station.FixedWidth = false;
+GMAT ReportFile_Ground_Station.Delimiter = ',';
+GMAT ReportFile_Ground_Station.ColumnWidth = 23;
+GMAT ReportFile_Ground_Station.WriteReport = true;
 
 
 %----------------------------------------
@@ -372,4 +374,4 @@ GMAT ReportFile_Svalbard.WriteReport = true;
 %----------------------------------------
 
 BeginMissionSequence;
-Propagate LEOProp(SatSS) {SatSS.ElapsedDays = 3};
+Propagate LEO_Prop(LEO_Sat) {LEO_Sat.ElapsedDays = 3};
